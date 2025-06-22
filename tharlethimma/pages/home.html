@@ -17,30 +17,46 @@
 
     <!-- Podcast Platforms Section -->
     <div class="bg-[#24243e] py-12 px-6 md:px-12 lg:px-24 mt-8 rounded-lg shadow-lg">
-        <div class="max-w-5xl mx-auto flex flex-wrap justify-around items-center gap-x-12 gap-y-8">
-            <!-- JioSaavn Icon -->
+        <!-- Using flex with flex-wrap and controlled spacing for responsiveness -->
+        <div class="max-w-5xl mx-auto flex flex-wrap justify-center sm:justify-around items-center gap-x-12 gap-y-8">
+            <!-- JioSaavn Logo (Generic JS Icon) -->
             <div class="flex flex-col items-center space-y-2">
-                <img src="https://placehold.co/40x40/FFFFFF/000000?text=JS" alt="JioSaavn Icon" class="rounded-full w-10 h-10">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="rounded-full text-white bg-red-600 p-1">
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="14" font-weight="bold" fill="#000">JS</text>
+                </svg>
                 <span class="text-gray-300 text-sm md:text-base">JioSaavn</span>
             </div>
-            <!-- Google Podcasts Icon -->
+            <!-- Google Podcasts Logo (Generic G Icon) -->
             <div class="flex flex-col items-center space-y-2">
-                <img src="https://placehold.co/40x40/FFFFFF/000000?text=G" alt="Google Podcasts Icon" class="rounded-full w-10 h-10">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="rounded-full text-white bg-blue-600 p-1">
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="14" font-weight="bold" fill="#000">G</text>
+                </svg>
                 <span class="text-gray-300 text-sm md:text-base">Google Podcasts</span>
             </div>
-            <!-- Apple Podcasts Icon -->
+            <!-- Apple Podcasts Logo (Generic A Icon) -->
             <div class="flex flex-col items-center space-y-2">
-                <img src="https://placehold.co/40x40/FFFFFF/000000?text=A" alt="Apple Podcasts Icon" class="rounded-full w-10 h-10">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="rounded-full text-white bg-gray-500 p-1">
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="14" font-weight="bold" fill="#000">A</text>
+                </svg>
                 <span class="text-gray-300 text-sm md:text-base">Apple Podcasts</span>
             </div>
-            <!-- Amazon Music Icon -->
+            <!-- Amazon Music Logo (Generic AM Icon) -->
             <div class="flex flex-col items-center space-y-2">
-                <img src="https://placehold.co/40x40/FFFFFF/000000?text=AM" alt="Amazon Music Icon" class="rounded-full w-10 h-10">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="rounded-full text-white bg-orange-600 p-1">
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="14" font-weight="bold" fill="#000">AM</text>
+                </svg>
                 <span class="text-gray-300 text-sm md:text-base">Amazon Music</span>
             </div>
-            <!-- YouTube Icon -->
+            <!-- Spotify Logo -->
             <div class="flex flex-col items-center space-y-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="text-red-600 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="text-green-500">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.508 17.518c-1.547 0-2.808-1.258-2.808-2.808s1.261-2.808 2.808-2.808c.636 0 1.233.208 1.716.559l-.022.022c.983-.347 1.831-.531 2.766-.531 3.256 0 5.869 2.613 5.869 5.869s-2.613 5.869-5.869 5.869c-.935 0-1.783-.184-2.766-.531l.022.022c-.483.351-1.08.559-1.716.559zm.72-2.12c.007.01.014.02.021.029.043.048.087.096.13.142l.006.006c.712.56 1.624.862 2.593.862 2.052 0 3.715-1.663 3.715-3.715s-1.663-3.715-3.715-3.715c-.969 0-1.88.302-2.593.862l-.006.006c-.043.046-.087.094-.13.142-.007.009-.014.019-.021.029zm4.271-4.708c.654-.836 1.458-1.503 2.378-1.954l.019-.009c.288-.133.585-.246.89-.344l.008-.002c.008-.002.016-.003.024-.004.08-.016.162-.029.245-.039l.02-.002c.083-.008.167-.013.25-.013.082 0 .165.005.247.013l.02.002c.083.01.165.023.245.039l.008.002c.305.098.602.211.89.344l.019.009c.92.451 1.724 1.118 2.378 1.954l.023.03c.523.669.95 1.401 1.265 2.181l.008.016c.159.431.29.87.387 1.314l.02.091c.029.132.049.266.059.401l.001.016c.002.083.003.167.003.25s-.001.167-.003.25l-.001.016c-.01.135-.03.269-.059.401l-.02.091c-.097.444-.228.883-.387 1.314l-.023.03c-.654.836-1.458 1.503-2.378 1.954l-.019.009c-.288.133-.585.246-.89.344l-.008.002c-.008.002-.016.003-.024.004-.08.016-.162.029-.245.039l-.02.002c-.083.008-.167.013-.25-.013-.082 0-.165-.005-.247-.013l-.02-.002c-.083-.01-.165-.023-.245-.039l-.008-.002c-.305-.098-.602-.211-.89-.344l-.019-.009c-.92-.451-1.724-1.118-2.378-1.954l-.023-.03c-.523-.669-.95-1.401-1.265-2.181l-.008-.016c-.159-.431-.29-.87-.387-1.314l-.02-.091c-.029-.132-.049-.266-.059-.401l-.001-.016c-.002-.083-.003-.167-.003-.25s.001-.167.003-.25l.001-.016c.01-.135.03-.269.059-.401l.02-.091c.097-.444.228-.883.387-1.314l.023-.03z"/>
+                </svg>
+                <span class="text-gray-300 text-sm md:text-base">Spotify</span>
+            </div>
+            <!-- YouTube Logo (Original SVG) -->
+            <div class="flex flex-col items-center space-y-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="text-red-600">
                     <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.234 0c-2.336.158-2.614 1.109-2.739 3.018c-.098.814-.155 1.58-.17 2.296c-.012.551-.019 1.101-.019 1.651s.007 1.101.019 1.651c.015.716.072 1.482.17 2.296c.125 1.909.403 2.86 2.739 3.018c3.603.246 11.63.246 15.234 0c2.336-.158 2.614-1.109 2.739-3.018c.098-.814.155-1.58.17-2.296c.012-.551.019-1.101.019-1.651s-.007-1.101-.019-1.651c-.015-.716-.072-1.482-.17-2.296c-.125-1.909-.403-2.86-2.739-3.018zm-11.615 13.816v-9.524l7.143 4.762-7.143 4.762z"/>
                 </svg>
                 <span class="text-gray-300 text-sm md:text-base">YouTube</span>
