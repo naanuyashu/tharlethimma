@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            const pageName = link.getAttribute('href').substring(1); // e.g., "home", "profile"
+            const pageName = link.getAttribute('href').substring(1); // e.g., "home", "profile", "audio-platforms"
             loadPage(pageName);
             window.history.pushState({ page: pageName }, '', link.getAttribute('href'));
         });
