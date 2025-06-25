@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Removed inline style for search-input-container -->
 </head>
 <body class="antialiased">
     <!-- Navbar -->
@@ -19,11 +20,9 @@
             <a href="#audio-platforms" class="text-gray-300 hover:text-white transition-colors duration-300 nav-link">Listen Here</a>
             <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 nav-link">Contact</a>
         </div>
-        <!-- Search Icon and Mobile Menu Toggle -->
+        <!-- Mobile Menu Toggle (Search icon and input removed) -->
         <div class="flex items-center space-x-4">
-            <button class="text-gray-300 hover:text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-            </button>
+            <!-- Search Icon and its button and input have been removed -->
             <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
@@ -46,7 +45,8 @@
         </div>
     </div>
 
-    <!-- Main Content Area - Pages will be loaded here -->
+
+    <!-- Main Content Area -->
     <main id="app-content" class="container mx-auto mt-8">
         <!-- Content will be loaded dynamically by JavaScript -->
     </main>
