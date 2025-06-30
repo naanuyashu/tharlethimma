@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top
 
-            // --- IMPORTANT: Attach "View Episodes" listener ONLY if on home page ---
+            // --- Attach "View Episodes" listener ONLY if on home page ---
             if (pageName === 'home') {
                 const viewEpisodesButton = appContent.querySelector('#home-page header button');
                 const popularEpisodesSection = appContent.querySelector('#home-page .py-16.px-6.md\\:px-12.lg\\:px-24.mt-8');
@@ -35,7 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
             }
-            // --- End of "View Episodes" listener logic ---
+
+            // --- Attach "My Journey" listener ONLY if on profile page ---
+            if (pageName === 'profile') {
+                const myJourneyButton = appContent.querySelector('#profile-page button');
+                const profileContentDiv = appContent.querySelector('#profile-page .bg-gradient-to-r'); // The main content div of profile page
+
+                if (myJourneyButton && profileContentDiv) {
+                    myJourneyButton.addEventListener('click', () => {
+                        // Scroll to the top of the profile content or a specific section if defined
+                        profileContentDiv.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+            }
+            // --- End of "My Journey" listener logic ---
 
         } catch (error) {
             console.error('Error loading page:', error);
