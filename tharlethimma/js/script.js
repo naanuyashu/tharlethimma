@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileNavLinks = document.querySelectorAll('#mobile-menu [data-mobile-link]');
 
+    // Get the "View Episodes" button
+    const viewEpisodesButton = document.querySelector('#home-page header button');
+
     // Function to load page content dynamically
     async function loadPage(pageName) {
         try {
@@ -70,6 +73,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu button event listeners
     mobileMenuButton.addEventListener('click', openMobileMenu);
     closeMobileMenuButton.addEventListener('click', closeMobileMenu);
+
+    // Add functionality to the "View Episodes" button on the home page
+    if (viewEpisodesButton) {
+        viewEpisodesButton.addEventListener('click', () => {
+            const popularEpisodesSection = document.querySelector('.py-16.px-6.md\\:px-12.lg\\:px-24.mt-8');
+            if (popularEpisodesSection) {
+                popularEpisodesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
 
     // Handle initial load and hash changes
     function handleHashChange() {
